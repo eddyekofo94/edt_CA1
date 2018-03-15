@@ -12,6 +12,8 @@ initialFunc <- function(){
 
 initialFunc()
 
+banking<-banking[complete.cases(banking),]
+
 install.packages("ggplot2")
 
 library(ggplot2)
@@ -68,6 +70,7 @@ sd(banking$pdays)
 numberOfRows<-nrow(banking) # number of rows
 
 numericValues<-sapply(banking, is.numeric)  # et all the numeric values
+
 
 numericValues
 numVals<-banking[, numericValues] # standard subsetting
@@ -130,7 +133,7 @@ lines(density(cons.price.clean), col="red")
 
 kurtosis(age.clean)
 
-skewness(banking$duration)                # apply the skewness function 
+skewness(banking$age)                # apply the skewness function 
 
 shapiro.test(age.clean)
 
