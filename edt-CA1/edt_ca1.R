@@ -16,6 +16,18 @@ banking<-banking[complete.cases(banking),]
 
 install.packages("ggplot2")
 
+install.packages("readxl")
+library(readxl)
+
+cor1.5 <- read_excel("./1.5.xlsx")
+
+
+install.packages("Hmisc")
+library(Hmisc)
+
+install.packages("corrplot")
+library(corrplot)
+
 library(ggplot2)
 #know what type of data it is
 #len=continous, supp=nominal, dose=categorical/ordinal
@@ -27,7 +39,7 @@ install.packages("easypackages")
 
 rm(cons.price)
 
-typeof(age)
+typeof(loan)
 
 levels(age)
 
@@ -70,7 +82,6 @@ sd(banking$pdays)
 numberOfRows<-nrow(banking) # number of rows
 
 numericValues<-sapply(banking, is.numeric)  # et all the numeric values
-
 
 numericValues
 numVals<-banking[, numericValues] # standard subsetting

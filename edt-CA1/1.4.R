@@ -13,8 +13,22 @@ qqline(age.clean)
 
 sd(age)
 
-z_test <- function(x, mu, s, n, tailed){
-  z <- (x-mu)/(s/sqrt(n))
+z_test <- function(x,tailed){
+  z <- (x-mean(x))/sd(x)
   if(tailed == 1) return(cat('Z-score - ', z, '\np-value - ', pnorm(-abs(z))))
   if(tailed == 2) return(cat('Z-score - ', z, '\np-value - ', 2 * pnorm(-abs(z))))
+  if(tailed != 1 | tailed != 2) return('can omly be one or two tailed')
 }
+
+z_test(duration,1)
+
+summary(z_test(age,1))
+
+quantile(age, 0.25)
+quantile(age, 0.75)
+
+summary(age)
+
+IQR(age)
+
+fivenum(age)

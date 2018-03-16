@@ -1,0 +1,13 @@
+"","age","housing","loan","duration","campaign","pdays","previous","cons.price.idx","cons.conf.idx","euribor3m","nr.employed","y"
+"age",1,NA,NA,0.03,0,-0.01,0.03,0.01,0.05,0.02,0.01,NA
+"housing",NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"loan",NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"duration",0.03,NA,NA,1,-0.08,-0.08,0.04,0.03,0,-0.04,-0.06,NA
+"campaign",0,NA,NA,-0.08,1,0.06,-0.08,0.09,0,0.12,0.14,NA
+"pdays",-0.01,NA,NA,-0.08,0.06,1,-0.5,0.02,-0.04,0.23,0.25,NA
+"previous",0.03,NA,NA,0.04,-0.08,-0.5,1,-0.2,-0.14,-0.39,-0.42,NA
+"cons.price.idx",0.01,NA,NA,0.03,0.09,0.02,-0.2,1,0.19,0.31,0.32,NA
+"cons.conf.idx",0.05,NA,NA,0,0,-0.04,-0.14,0.19,1,0.23,0.16,NA
+"euribor3m",0.02,NA,NA,-0.04,0.12,0.23,-0.39,0.31,0.23,1,0.79,NA
+"nr.employed",0.01,NA,NA,-0.06,0.14,0.25,-0.42,0.32,0.16,0.79,1,NA
+"y",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
